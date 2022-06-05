@@ -1,0 +1,23 @@
+{
+    "include": ["src/**/*"],
+    "exclude": ["node_modules/**/*", "dist/**/*"],
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "target": "ESNext",
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "esModuleInterop": true,
+        "importsNotUsedAsValues": "error",
+        "sourceMap": true,
+        "paths": {
+            "#lib": ["src/lib"],
+            "#lib/*": ["src/lib/*"]
+        }
+    }
+}
